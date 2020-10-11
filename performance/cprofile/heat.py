@@ -40,7 +40,7 @@ def iterate(field, field0, a, dx, dy, timesteps, image_interval):
             write_field(field, m)
 
 def init_fields(filename):
-    # Read the initial temperature field from file
+    # Read the initial temperaturse field from file
     field = np.loadtxt(filename)
     field0 = field.copy() # Array for field of previous time step
     return field, field0
